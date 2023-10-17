@@ -22,4 +22,4 @@ def profilemanagement(request):
 
 def plot_view(request):
     plot_file_path = os.path.join('images', 'plot.png')
-    return render(request, 'myapp/index.html', {'plot_file_path': plot_file_path})
+    return render(request, 'myapp/plot.html', {'plot_file_path': plot_file_path})
