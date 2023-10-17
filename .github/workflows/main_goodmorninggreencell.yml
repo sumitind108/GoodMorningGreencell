@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'GoodMorningGreencell'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A873D6CB318F4264B7D8E61E672E5639 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7E16C86967AA49EA9EA23BA44C1CCA20 }}
