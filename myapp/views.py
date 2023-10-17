@@ -7,8 +7,15 @@ import os
 def index(request):
     return render(request, 'myapp/index.html')
 
+# def register(request):
+#     return render(request, 'myapp/register.html')
+
 def register(request):
-    return render(request, 'myapp/register.html')
+    # Path to the image inside static/images directory
+    plot_file_path = os.path.join('images', 'plot.png')
+    return render(request, 'myapp/register.html', {'plot_file_path': plot_file_path})
+
+
 
 def dashboard(request):
     return render(request, 'myapp/dashboard.html')
@@ -21,7 +28,6 @@ def profilemanagement(request):
 
 
 def plot_view(request):
-    # plot_file_path = os.path.join('images', 'plot.png')
-    plot_file_path = os.path.join('static', 'images', 'plot.png')
-
+    # Path to the image inside static/images directory
+    plot_file_path = os.path.join('images', 'plot.png')
     return render(request, 'myapp/plot.html', {'plot_file_path': plot_file_path})
