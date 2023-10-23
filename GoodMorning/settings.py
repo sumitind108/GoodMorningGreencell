@@ -7,8 +7,8 @@ SECRET_KEY = 'django-insecure-m(gnw2qx#3l)jo!_yup22iuuu$))q4$s0$jnhs&=b*_bq!0gv0
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['goodmorninggreencell.azurewebsites.net']
 # ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['welcometogcm.azurewebsites.net']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -85,7 +85,17 @@ STATIC_URL = '/static/'
 # Absolute filesystem path to the directory that will hold static files.
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/data/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'data')
+
+
 # Additional locations of static files
-STATICFILES_DIRS = [BASE_DIR / 'static']
+# STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
